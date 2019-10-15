@@ -17,7 +17,6 @@
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.1s ease-in-out;
-  font-family: 'Heebo', sans-serif;
 }
 
 .tabtitleButton:hover {
@@ -44,7 +43,6 @@
   -o-transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.1s ease-in-out;
-  font-family: 'Heebo', sans-serif;
 }
 
 .lunchModeButton:hover {
@@ -117,7 +115,6 @@
   transition: all 0.1s ease-in-out;
   background-color: #101214;
   outline: 0 none;
-  font-family: 'Heebo', sans-serif;
 }
 
 .colorPicker:hover {

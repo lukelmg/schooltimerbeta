@@ -3,19 +3,14 @@
 }
 
 #loadingScreen {
-  background-color:1F2026;
-  color:white;
-  width:100%;
+  background-color: 1f2026;
+  color: white;
+  width: 100%;
   height: 100%;
-  position:absolute;
+  position: absolute;
   z-index: 1000;
   opacity: 1;
-  
-        
-
-
-   transition: all  var(--transitionTime) ease-in-out;
-  
+  transition: all var(--transitionTime) ease-in-out;
 }
 
 #schoolTimer {
@@ -25,39 +20,37 @@
   font-size: 75px;
   margin: 0;
   float: left;
-  
 
-   transition: all var(--transitionTime) ease-in-out;
-  }
+  transition: all var(--transitionTime) ease-in-out;
+}
 
-  #spinnerContainer {
+#spinnerContainer {
   margin: 0px 0px;
-  display:inline-block; 
+  display: inline-block;
   background-color: Transparent;
-      position: absolute;
+  position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 
-   transition: all var(--transitionTime) ease-in-out;
-  }
+  transition: all var(--transitionTime) ease-in-out;
+}
 #spinner {
   margin: 0px 20px;
-  display:inline-block;
-  float:right;
-  
+  display: inline-block;
+  float: right;
 
-   transition: all var(--transitionTime) ease-in-out;
-  }
-  
-  #loadCopy {
-    color:white;
-    font-family:Arial;
-          position: absolute;
+  transition: all var(--transitionTime) ease-in-out;
+}
+
+#loadCopy {
+  color: white;
+  font-family: Arial;
+  position: absolute;
   top: 60%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-    margin-left: 5px;
+  margin-left: 5px;
 
-   transition: all var(--transitionTime) ease-in-out;
-  }
+  transition: all var(--transitionTime) ease-in-out;
+}

@@ -30,22 +30,23 @@ body {
   font-weight: bold;
   transition: all 0.1s ease-in-out;
   border: none;
-
 }
 
 #colorOptions:hover {
   background-color: 6c7187;
 }
 
-#colorOptions:focus {   
-    outline:none;
-    border:none;
-    box-shadow:none;}
-#colorOptions:enabled {outline:0;}
-
+#colorOptions:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+#colorOptions:enabled {
+  outline: 0;
+}
 
 #presets {
-   margin-top: 10px;
+  margin-top: 10px;
   background-color: 4a4d5c;
   color: white;
   width: 80%;
@@ -56,7 +57,7 @@ body {
   border: none;
 }
 #presets:hover {
-background-color: 6c7187;
+  background-color: 6c7187;
 }
 
 #presets:focus {
@@ -66,17 +67,17 @@ background-color: 6c7187;
 #schoolScheduleTxt {
   color: white;
   font-weight: bold;
-  font-family: 'Ramabhadra', sans-serif;
+  font-family: "Ramabhadra", sans-serif;
   font-size: 4vh;
   margin: 5px 3px;
   margin-bottom: -10;
-  margin-top:0;
+  margin-top: 0;
 }
 
 #tabTxt {
   color: white;
   font-weight: bold;
-  font-family: 'Ramabhadra', sans-serif;
+  font-family: "Ramabhadra", sans-serif;
   font-size: 4vh;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -86,7 +87,7 @@ background-color: 6c7187;
 #lunchTxt {
   color: white;
   font-weight: bold;
-  font-family: 'Ramabhadra', sans-serif;
+  font-family: "Ramabhadra", sans-serif;
   font-size: 16px;
   margin-top: 25px;
   margin-bottom: 0px;
@@ -117,20 +118,20 @@ background-color: 6c7187;
   display: inline-block;
   position: static;
   margin-top: 1vh;
-  position:relative;
-  top:0vh;
+  position: relative;
+  top: 0vh;
 }
 
 #daySelectTxt2,
-#daySelectTxt3{
+#daySelectTxt3 {
   color: white;
   font-size: 3vh;
   font-family: "Ramabhadra", sans-serif;
   display: inline-block;
-  margin-top:-150px;
-  padding-top:50px;
-  position:relative;
-  top:0vh;
+  margin-top: -150px;
+  padding-top: 50px;
+  position: relative;
+  top: 0vh;
 }
 
 #daySelectTxt4 {
@@ -138,9 +139,9 @@ background-color: 6c7187;
   font-size: 3vh;
   font-family: "Ramabhadra", sans-serif;
   display: inline-block;
-  margin-top:-150px;
-  padding-top:50px;
-  margin-bottom:0px;
-    position:relative;
-  top:0vh;
+  margin-top: -150px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+  position: relative;
+  top: 0vh;
 }

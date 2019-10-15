@@ -1,6 +1,7 @@
-body {font-family: Arial, Helvetica, sans-serif;
-   transition: all .1s ease-in-out;
-    min-height: 100%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.1s ease-in-out;
+  min-height: 100%;
 }
 html {
   height: 100%;
@@ -16,8 +17,8 @@ html {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -27,7 +28,6 @@ html {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  
 }
 
 /* The Close Button */
@@ -45,28 +45,27 @@ html {
   cursor: pointer;
 }
 
-
 #backgroundTxt {
-  color:Black;
-   display:inline-block;
+  color: Black;
+  display: inline-block;
   position: relative;
   left: 4%;
 }
 #accentTxt {
-  color:Black;
-  display:inline-block;
+  color: Black;
+  display: inline-block;
   position: relative;
   left: 23.3%;
 }
 #textTxt {
-  color:Black;
- display:inline-block;
+  color: Black;
+  display: inline-block;
   position: relative;
   left: 51%;
 }
 #sidebarTxt {
-  color:Black;
-   display:inline-block;
+  color: Black;
+  display: inline-block;
   position: relative;
   left: 70.5%;
 }
@@ -80,34 +79,31 @@ html {
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  width:100px;
+  width: 100px;
 }
-
 
 #color-picker-container {
-  display:inline-block;
+  display: inline-block;
 }
 #color-picker-container2 {
-   display:inline-block;
-
+  display: inline-block;
 }
 #color-picker-container3 {
-  display:inline-block;
-  
+  display: inline-block;
 }
 #color-picker-container4 {
-  display:inline-block;
+  display: inline-block;
 }
 
 #color-picker-container5 {
-  display:inline-block;
+  display: inline-block;
 }
 #color-picker-container6 {
-  display:inline-block;
+  display: inline-block;
 }
 
 .update {
-   background-color: #03b7a8; /* Green */
+  background-color: #03b7a8; /* Green */
   border: none;
   color: white;
   padding: 20px;
@@ -119,16 +115,14 @@ html {
   border-radius: 10px;
 }
 
-
 #values {
-  color:black;
-  
+  color: black;
 }
 
 #like {
-  width:20%;
-  float:right;
-  color:white;
+  width: 20%;
+  float: right;
+  color: white;
   margin: 10px 10px 10px 10px;
 }
 
@@ -137,18 +131,18 @@ html {
 }
 
 #untilSummerBreak {
-  display:inline-block;
-  font-weight:Bold;
+  display: inline-block;
+  font-weight: Bold;
 }
 
 #untilWeekend {
-  display:inline-block;
-  font-weight:Bold;
+  display: inline-block;
+  font-weight: Bold;
 }
 
 .weekend {
-  display:inline-block;
+  display: inline-block;
 }
 .summer {
-  display:inline-block;
+  display: inline-block;
 }

@@ -1,23 +1,22 @@
 <html>
   <head>
-    
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140137723-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140137723-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-140137723-1');
+      gtag('config', 'UA-140137723-1');
   
-  function promo(event) {
-  ga('send', 'event', {
-    eventCategory: 'Buttons',
-    eventAction: 'promo',
-    eventLabel: event.target.href
-  });
-}
+      function promo(event) {
+      ga('send', 'event', {
+        eventCategory: 'Buttons',
+        eventAction: 'promo',
+        eventLabel: event.target.href
+      });
+    }
 
-</script>
+    </script>
     <title>Mobile School Timer</title>
   </head>
   <body onload="defineTiming();">
@@ -38,8 +37,6 @@
     <p class="periods" id="period7">7|</p> <p class="time" id="time7"></p> <br>
     <p class="periods" id="period8">8|</p> <p class="time" id="time8"></p> <br>
     <p class="periods" id="period9">9|</p> <p class="time" id="time9"></p> <br>
-    
-   
     
     <p id="schedule">
       Schedule
@@ -89,8 +86,6 @@
      document.getElementById("Dbutton").style.backgroundColor = "db3d3d";
     defineTiming();
   }
-  
-
 
 var h1; var m1;
 var h2; var m2;
@@ -464,6 +459,5 @@ function period9() {
     font-size:5em;
     margin-bottom:5%;
   }
-  
   
 </style>
