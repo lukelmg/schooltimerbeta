@@ -1,0 +1,140 @@
+<!-- Hello everyone looking at my code for an unknown reason! If you can find this, consider joining the beta!-->
+<html>
+   <head>
+      <link rel="icon" href="https://images.vexels.com/media/users/3/132607/isolated/preview/86e952b378eaa8c5ea573fa2bf280d5b-wall-clock-icon-by-vexels.png">
+   </head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="tooltip.css">
+  <link rel="stylesheet" href="timeEnd.css">
+  <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="checkmark.css">
+  <link rel="stylesheet" href="random.css">
+   <form id="mainForm" name="mainForm">
+      <link rel="stylesheet" href="selector.css">
+      <div id="dayContainer">
+         <center>
+            <p id="schoolScheduleTxt">School<br>Schedule</p>
+            <div id="rates">
+               <div class="tooltip">
+                  <span class="tooltiptext">Normal</span>
+                  <label id="daySelectTxt" class="container">A
+                  <input type="radio" name="rads" value="A" id="Acheck" checked="checked">
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+               <br>
+               <div class="tooltip">
+                  <span class="tooltiptext">Homeroom</span>
+                  <label id="daySelectTxt2" class="container">B
+                  <input type="radio" name="rads" value="B" id="Bcheck">
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+               <br>
+               <div class="tooltip">
+                  <span class="tooltiptext">Early Dismissal</span>
+                  <label id="daySelectTxt3" class="container">C
+                  <input type="radio" name="rads" value="C"  id="Ccheck">
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+               <br>
+               <div class="tooltip">
+                  <span class="tooltiptext">2 Hour Delay</span>
+                  <label id="daySelectTxt4" class="container">D
+                  <input type="radio" name="rads" value="D" id="Dcheck">
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+               <br>
+               <p id="darklightTxt">Dark/Light</p>
+               <div class="tooltip">
+               <span class="tooltiptext">Changes Theme from Dark to Light</span>
+               <label class="switch">
+               <input id="togglePoint" onclick="checkToggle();" type="checkbox" >
+               <span class="slider round"></span>
+               </label>
+               </div>
+               <p id="tabTxt">Tab Title</p>
+                <div class="tooltip">
+                  <span class="tooltiptext">Changes Tab Title to end of day from closest period</span>
+                <label class="switch">
+               <input id="togglePoint2" onclick="tabSwitch();" type="checkbox" >
+               <span class="sliderTab round"></span>
+               </label>
+              </div>
+               <p id="lunchTxt">Lunch Mode</p>
+                <div class="tooltip">
+                  <span class="tooltiptext">Calculates the End of Lunch Periods</span>
+                <label class="switch">
+               <input id="togglePoint3" onclick="lunch();" type="checkbox" >
+               <span class="sliderTab round"></span>
+               </label>
+              </div>
+           </div>
+         </center>
+      </div>
+     
+     <div id="dayContainer">
+         <center>
+            <p id="schoolScheduleTxt">Keystone<br>Schedule</p>
+            <div class="tooltip">
+                  <span class="tooltiptext">Special Keystone Schedule for May 2019</span>
+                <label class="switch">
+               <input id="togglePointKey" onclick="key();" type="checkbox" >
+               <span class="sliderTab round"></span>
+               </label>
+              </div>
+       </center>
+     </div>
+     
+   </form>
+   <span id="result"></span>
+   <p id="firstEndText"><b>Period 1 Ends In:&nbsp</b></p>
+   <p id="firstEnd"></p>
+   <br>
+   <p id="secondEndText"><b>Period 2 Ends In:&nbsp</b></p>
+   <p id="secondEnd"></p>
+   <br>
+   <p id="thirdEndText"><b>Period 3 Ends In:&nbsp</b></p>
+   <p id="thirdEnd"></p>
+   <button class="secret" id="secret" onclick="puzzle();"></button>
+   <br>
+   <p id="fourthEndText"><b>Period 4 Ends In:&nbsp</b></p>
+   <p id="fourthEnd"></p>
+   <br>
+   <p id="fifthEndText"><b>Period 5 Ends In:&nbsp</b></p>
+   <p id="fifthEnd"></p>
+   <br>
+   <p id="sixthEndText"><b>Period 6 Ends In:&nbsp</b></p>
+   <p id="sixthEnd"></p>
+   <br>
+   <p id="seventhEndText"><b>Period 7 Ends In:&nbsp</b></p>
+   <p id="seventhEnd"></p>
+   <br>
+   <p id="eighthEndText"><b>Period 8 Ends In:&nbsp</b></p>
+   <p id="eighthEnd"></p>
+   <br>
+   <p id="endText"><b>End of School In:&nbsp</b></p>
+   <p id="time"></p>
+  <div id="yearContainer">
+    <p id="endYearTxt">Time Until End of School Year</p><br>
+   <p id="endYear">Calculating...</p>
+  </div>
+  <br>
+   <p id="copy">Copyright &copy Luke Gutman, 2019</p><p id="title">www.schooltimer.glitch.me</p>
+   <button onclick="location.href='beta.html';" class="betaButton" id="betaButton">Join The Beta</button>
+  <button onclick="lightbox_open();" class="video" id="video">Promotional Video</button>
+  <div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  <video id="VisaChipCardVideo" width="600" controls>
+      <source src="https://cdn.glitch.com/b41ac94d-c334-488c-802a-1b6b7a8c75e8%2FSchool%20Timer.mp4?1557275092841" type="video/mp4">
+      <!--Browser does not support <video> tag -->
+    </video>
+</div>
+
+<div id="fade" onClick="lightbox_close();"></div>
+
+</html>
+<script src="mainScript.js"></script>

@@ -1,0 +1,66 @@
+#endText {
+  color: #ff1c3e;
+  font-size: 8.5vh;
+  font-family: Arial;
+  margin: 0px 0px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: all 0.1s ease-in-out;
+  cursor: default;
+}
+#time {
+  color: #ff1c3e;
+  font-size: 8.5vh;
+  font-family: Arial;
+  margin: 0px 0px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: all 0.1s ease-in-out;
+  cursor: default;
+}
+
+#firstEnd,
+#firstEndText {
+  color: white;
+  font-size: 8.5vh;
+  font-family: Arial;
+  margin: 0px 0px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: default;
+}
+#secondEnd,
+#secondEndText,
+#thirdEndText,
+#thirdEnd,
+#fourthEndText,
+#fourthEnd,
+#fifthEndText,
+#fifthEnd,
+#sixthEnd,
+#sixthEndText,
+#seventhEnd,
+#seventhEndText,
+#eighthEnd,
+#eighthEndText {
+  color: white;
+  font-size: 8.5vh;
+  font-family: Arial;
+  margin: 0px 0px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: default;
+}
+#title {
+  color: #db3d3d;
+  font-size: 30px;
+  font-family: Trebuchet MS;
+  font-weight: Bold;
+  float: right;
+  top: -30;
+  position: relative;
+}

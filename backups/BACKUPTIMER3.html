@@ -1,0 +1,220 @@
+  <button onclick="lightbox_open(); promo();" class="video" id="video" id="vidButton">Promotional Video</button>
+  <button onclick="lightbox_open(); promo();" class="video" id="video" id="vidButton">Promotional Video</button>
+  <button onclick="lightbox_open(); promo();" class="video" id="video" id="vidButton">Promotional Video</button>
+  <button onclick="lightbox_open(); promo();" class="video" id="video" id="vidButton">Promotional Video</button>
+  <button onclick="lightbox_open(); promo();" class="video" id="video" id="vidButton">Promotional Video</button>
+
+
+<!-- Hello everyone looking at my code for an unknown reason!-->
+<html>
+   <head>
+      <link rel="icon" href="https://cdn.glitch.com/b41ac94d-c334-488c-802a-1b6b7a8c75e8%2Fclock_fUV_icon.ico">
+     
+      <script src="https://cdn.jsdelivr.net/npm/@jaames/iro/dist/iro.min.js"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140137723-1"></script>
+     
+     <link rel="stylesheet" href="CSSstyle.css">
+     <link rel="stylesheet" href="CSSslider.css">
+     <link rel="stylesheet" href="CSStooltip.css">
+     <link rel="stylesheet" href="CSStimeEnd.css">
+     <link rel="stylesheet" href="CSSbutton.css">
+     <link rel="stylesheet" href="CSScheckmark.css">
+     <link rel="stylesheet" href="CSSrandom.css">
+     <link rel="stylesheet" href="CSSselector.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   </head>
+  <body onload="schooltimer(); onloadtest(); checkToggle();" scroll="no" style="overflow: hidden">
+    <center>
+      
+      <div id="alertOverlay">
+        <center>
+        <div id="tabTitleOverlay">
+           <p id="alertText">
+             Tab Title Enabled
+          </p>
+        </div>
+        </center>
+      </div>
+      
+       <div id="lunchAlertOverlay">
+        <center>
+        <div id="lunchTitleOverlay">
+           <p id="lunchAlertText">
+             Lunch Mode Enabled
+          </p>
+        </div>
+        </center>
+      </div>
+      
+      
+  <div id="mydiv">
+                     <button id="closeButton" class="closeButton" onclick="moveColor()">&times</button> <div id="mydivheader"><h2>Color Picker</h2></div>
+            <br>
+                    <div id="color-picker-container"></div>
+                    <div color="white" id="values"></div>
+    
+    <select id="colorOptions" onclick="selectColorElement()">
+
+  <option id="myOption" value="background">Background</option>
+      <option value="accent">Accent</option>
+  <option value="text">Text</option>
+       <option value="buttonTxt">Button Text</option>
+      <option value="sidebar">Sidebar</option>
+      <option value="sidebarTxt">Sidebar Text</option>
+      <option value="settingE">Setting Enabled</option>
+       <option value="settingETxt">Setting Enabled Text</option>
+      <option value="settingD">Setting Disabled</option>
+       <option value="settingDTxt">Setting Disabled Text</option>
+     
+</select>
+    <br>
+    <p id="preset">Preset Themes</p>
+ <select id="presets" onclick="selectPreset()">
+   <option id="presetDefault">Default</option>
+   <option id="presetLight">Light</option>
+   <option id="presetStealth">Stealth</option>
+   <option id="presetBlueBlack">Blue/Black</option>
+   <option id="presetYellowBlack">Yellow/Black</option>
+   <option id="presetStrange">Strange Combination</option>
+    </select>
+                    
+           </div>
+    
+  </center>
+   <form id="mainForm" name="mainForm">
+     
+      <div id="dayContainer">
+         <center>
+            <p id="schoolScheduleTxt">School<br>Schedule</p>
+            <div id="rates">
+               <div class="tooltip">
+                  <span class="tooltiptext">Normal</span>
+                  <label id="daySelectTxt" class="container">A
+                  <input type="radio" name="rads" value="A" id="Acheck" checked="checked">
+                  <span class="checkmark" id="checkmark"></span>
+                  </label>
+               </div>
+               <br>
+               <div class="tooltip">
+                  <span class="tooltiptext">Homeroom</span>
+                  <label id="daySelectTxt2" class="container">B
+                  <input type="radio" name="rads" value="B" id="Bcheck">
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+               <br>
+               <div class="tooltip">
+                  <span class="tooltiptext">Early Dismissal</span>
+                  <label id="daySelectTxt3" class="container">C
+                  <input type="radio" name="rads" value="C"  id="Ccheck">
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+               <br>
+               <div class="tooltip">
+                  <span class="tooltiptext">2 Hour Delay</span>
+                  <label id="daySelectTxt4" class="container">D
+                  <input type="radio" name="rads" value="D" id="Dcheck">
+                  <span class="checkmark"></span>
+                  </label>
+               </div>
+               <br>
+              
+              <p id="tabTxt">Settings</p>
+              
+               <div class="tooltip">
+                  <span class="tooltiptext">Changes Tab Title to end of day from closest period</span>
+              <button class="tabTitleButton" type="button" id="tabTitleButton" onclick="tabSwitch();">
+                Tab Title
+              </button>
+              </div>
+            <!--   
+               <div class="tooltip">
+                  <span class="tooltiptext">Changes Tab Title to end of day from closest period</span>
+                  <label class="switch">
+                  <input id="togglePoint2" onclick="tabSwitch();" type="checkbox" >
+                  <span class="sliderTab round"></span>
+                  </label>
+               </div>
+-->
+              <!-- <p id="lunchTxt">Lunch Mode</p>
+               <div class="tooltip">
+                  <span class="tooltiptext">Calculates the End of Lunch Periods</span>
+                  <label class="switch">
+                  <input id="togglePoint3" onclick="lunch();" type="checkbox" >
+                  <span class="sliderTab2 round"></span>
+                  </label>
+               </div>
+-->
+              <br>
+              
+               <div class="tooltip">
+                  <span class="tooltiptext">Changes Tab Title to end of day from closest period</span>
+              <button class="lunchModebutton" id="lunchModebutton" type="button" onclick="lunch();">
+                Lunch Mode
+              </button>
+              </div>
+              
+              
+              
+              <br>
+              <div id="yearContainer"> <p id="getDate">0</p> </div> <br>
+              <p id="endYearTxt">&nbsp Days of <br> School Left </p>
+            </div>
+         </center>
+      </div>
+     <div id="like">
+     </div>
+   </form>
+   <span id="result"></span>
+   <p id="firstEndText"><b>Period 1 Ends In:&nbsp</b></p>
+   <p id="firstEnd"></p>
+   <br>
+   <p id="secondEndText"><b>Period 2 Ends In:&nbsp</b></p>
+   <p id="secondEnd"></p>
+   <br>
+   <p id="thirdEndText"><b>Period 3 Ends In:&nbsp</b></p>
+   <p id="thirdEnd"></p>
+   <button class="secret" id="secret" onclick="puzzle();"></button>
+   <br>
+   <p id="fourthEndText"><b>Period 4 Ends In:&nbsp</b></p>
+   <p id="fourthEnd"></p>
+   <br>
+   <p id="fifthEndText"><b>Period 5 Ends In:&nbsp</b></p>
+   <p id="fifthEnd"></p>
+   <br>
+   <p id="sixthEndText"><b>Period 6 Ends In:&nbsp</b></p>
+   <p id="sixthEnd"></p>
+   <br>
+   <p id="seventhEndText"><b>Period 7 Ends In:&nbsp</b></p>
+   <p id="seventhEnd"></p>
+   <br>
+   <p id="eighthEndText"><b>Period 8 Ends In:&nbsp</b></p>
+   <p id="eighthEnd"></p>
+   <br>
+   <p id="endText"><b>End of School In:&nbsp</b></p>
+   <p id="time"></p>
+   <br>
+   <p id="copy">Copyright &copy Luke Gutman, 2019</p>
+   <p id="title"></p>
+   <button onclick="lightbox_open(); promo();" class="video" id="video" id="vidButton">Promotional Video</button>
+   <button onclick="featureFunction();" id="feature" class="feature">Feature Request</button>
+   <input type="button" class="colorPicker" value="Color Picker" id="myBtn" onclick="moveColor();">
+   <center>
+      <div id="light">
+         <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+         <video id="VisaChipCardVideo" width="100%" controls>
+            <source src="https://cdn.glitch.com/b41ac94d-c334-488c-802a-1b6b7a8c75e8%2FSchool%20Timer.mp4?1557275092841" type="video/mp4">
+         </video>
+      </div>
+      <div id="fade" onclick="lightbox_close();"></div>
+   </center>
+  </body>
+</html>
+<script src="JSmainScript.js"></script>
+
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+  
+</style>     
