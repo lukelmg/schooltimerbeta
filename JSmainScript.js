@@ -2,9 +2,11 @@
 
 function schooltimer() {
   
-  Bpressed();   //change to change schedule
+  Apressed();   //change to change schedule
   
 }
+
+
 
 function refreshAt(hours, minutes, seconds) {
     var now = new Date();
@@ -24,7 +26,6 @@ function refreshAt(hours, minutes, seconds) {
 }
 
 refreshAt(7,40,0);
-refreshAt(1,0,0);
 
 //STAY AT TOP
 
