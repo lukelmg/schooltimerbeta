@@ -11,6 +11,7 @@
   z-index: 1000;
   opacity: 1;
   transition: all var(--transitionTime) ease-in-out;
+  padding-left: 20px;
 }
 
 #schoolTimer {
