@@ -306,7 +306,7 @@ function moveColor()
 { 
 
   if (onoff == 0) {
-  document.getElementById("mydiv").style.top = "10%";
+  document.getElementById("mydiv").style.top = "2%";
   onoff = 1;
     if (colorCount == 25){
       alert("In what scenario would you need to click this button 25 times? \n \n Tell me if you got this message. I'm genuinely curious");
@@ -980,7 +980,7 @@ function selectColorElement() {
 var hex1; var hex2; var hex3; var hex4; var hex5; var hex6;
   
 var colorPicker = new iro.ColorPicker("#color-picker-container", {
-  width: 180,
+  width: 150,
   color: "#fff"
 });
   
