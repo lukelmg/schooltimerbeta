@@ -118,31 +118,3 @@ html {
 #values {
   color: black;
 }
-
-#like {
-  width: 20%;
-  float: right;
-  color: white;
-  margin: 10px 10px 10px 10px;
-}
-
-.likeText {
-  white-space: pre;
-}
-
-#untilSummerBreak {
-  display: inline-block;
-  font-weight: Bold;
-}
-
-#untilWeekend {
-  display: inline-block;
-  font-weight: Bold;
-}
-
-.weekend {
-  display: inline-block;
-}
-.summer {
-  display: inline-block;
-}

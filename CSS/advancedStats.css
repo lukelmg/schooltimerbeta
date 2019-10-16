@@ -1,0 +1,39 @@
+#advancedStats {
+  background-color: white;
+  display: inline-block;
+  float: right;
+  width: 30vh;
+  height: 100vh;
+  margin-right: 0px;
+  z-index: -10;
+  background-color: 191b1f;
+  color: white;
+}
+
+#like {
+  width: 20%;
+  float: right;
+  color: white;
+  margin: 10px 10px 10px 10px;
+}
+
+.likeText {
+  white-space: pre;
+}
+
+#untilSummerBreak {
+  display: inline-block;
+  font-weight: Bold;
+}
+
+#untilWeekend {
+  display: inline-block;
+  font-weight: Bold;
+}
+
+.weekend {
+  display: inline-block;
+}
+.summer {
+  display: inline-block;
+}

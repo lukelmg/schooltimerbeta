@@ -211,7 +211,7 @@ var up = document.getElementById("GFG_P");
             up.innerHTML = a; 
         } 
 
-/*
+
 
 function timeUntilWeekend () {
   var d = new Date();
@@ -260,7 +260,7 @@ function timeUntilWeekend () {
 }
 
 
-*/
+
 
 
 var countDownDate = new Date("Jun 16, 2020 15:37:25").getTime();
@@ -950,7 +950,7 @@ function ticke() { //fourth Period
 function repeat() {
     tick1(); tick2(); tick3(); tick4(); tick5(); tick6(); tick7(); tick8(); ticke();
   
- // timeUntilWeekend();
+ timeUntilWeekend();
   
   date();
   
