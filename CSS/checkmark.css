@@ -63,4 +63,5 @@ checkButton:focus {
   height: 2vh;
   opacity: 0;
   cursor: pointer;
+  margin-bottom: 20px;
 }
