@@ -213,50 +213,57 @@ var up = document.getElementById("GFG_P");
 
 
 
-function timeUntilWeekend () {
-  var d = new Date();
-  var n = d.getDay()
-
-  var actualDate;
-  var actualTimeUntil;
+var curday;
+var secTime;
+var ticker;
+ 
+function getSeconds() {
+ var nowDate = new Date();
+ var dy = 6 ; //Sunday through Saturday, 0 to 6
+ var countertime = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),20,0,0); //20 out of 24 hours = 8pm
+ 
+ var curtime = nowDate.getTime(); //current time
+ var atime = countertime.getTime(); //countdown time
+ var diff = parseInt((atime - curtime)/1000);
+ if (diff > 0) { curday = dy - nowDate.getDay() }
+ else { curday = dy - nowDate.getDay() -1 } //after countdown time
+ if (curday < 0) { curday += 7; } //already after countdown time, switch to next week
+ if (diff <= 0) { diff += (86400 * 7) }
+ startTimer (diff);
+}
+ 
+function startTimer(secs) {
+ secTime = parseInt(secs);
+ ticker = setInterval("tick()",1000);
+ tick(); //initial count display
+}
+ 
+function tick() {
+ var secs = secTime;
+ if (secs>0) {
+  secTime--;
+ }
+ else {
+  clearInterval(ticker);
+  getSeconds(); //start over
+ }
+ 
+ var days = Math.floor(secs/86400);
+ secs %= 86400;
+ var hours= Math.floor(secs/3600);
+ secs %= 3600;
+ var mins = Math.floor(secs/60);
+ secs %= 60;
+ 
+  hours = hours + (curday * 24);
   
-  if (n == 1) {
-    actualDate = 'Monday';
-    actualTimeUntil = endHour + 96;
-  } else {
-    if (n == 2) {
-      actualDate = 'Tuesday';
-      actualTimeUntil = endHour + 72;
-    } else {
-      if (n == 3) {
-        actualDate = 'Wednesday';
-        actualTimeUntil = endHour + 48;
-      } else {
-        if (n == 4){ 
-          actualDate = 'Thursday';
-          actualTimeUntil = endHour + 24;
-        } else {
-          if (n == 5){
-              actualDate = 'Friday';
-            } else {
-              if (n==6){
-                actualDate = 'Saturday';
-                actualTimeUntil = endHour + 144;
-                {
-                  if (n==7) {
-                    actualDate = 'Sunday';
-                    actualTimeUntil = endHour + 120;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+  secs = secs + 1;
   
+  if (secs < 10) {
+    secs = "0" + secs;
+  }
   
-  document.getElementById('untilWeekend').innerHTML = endHour + "h " + endMin + "m " + seconds + "s";
+  document.getElementById('untilWeekend').innerHTML = " " + hours + "h " + mins + "m " + secs + "s";
 }
 
 
@@ -950,9 +957,7 @@ function ticke() { //fourth Period
 function repeat() {
     tick1(); tick2(); tick3(); tick4(); tick5(); tick6(); tick7(); tick8(); ticke();
   
- timeUntilWeekend();
-  
-  date();
+  date();  getSeconds();
   
     document.addEventListener('DOMContentLoaded', tick1);
     document.addEventListener('DOMContentLoaded', tick2);

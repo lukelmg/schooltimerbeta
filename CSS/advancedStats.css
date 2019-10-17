@@ -8,6 +8,7 @@
   z-index: -10;
   background-color: 191b1f;
   color: white;
+    line-height: 0px;
 }
 
 #like {
@@ -15,25 +16,31 @@
   float: right;
   color: white;
   margin: 10px 10px 10px 10px;
+    line-height: 0px;
 }
 
 .likeText {
   white-space: pre;
+  line-height: 0px;
 }
 
 #untilSummerBreak {
   display: inline-block;
   font-weight: Bold;
+    line-height: 0px;
 }
 
 #untilWeekend {
   display: inline-block;
   font-weight: Bold;
+    line-height: 0px;
 }
 
 .weekend {
   display: inline-block;
+    line-height: 0px;
 }
 .summer {
   display: inline-block;
+    line-height: 0px;
 }
