@@ -210,27 +210,61 @@ var up = document.getElementById("GFG_P");
 
 
 function weekendCalculate () {
+  var newHour = 3;
+
+  var currentDateToday = new Date().getTime();
+  var dt = new Date(currentDateToday);
+
+  var newDt = String(dt);
+
+  var sunday = newDt.includes("Sun");
+  var monday = newDt.includes("Mon");
+  var tuesday = newDt.includes("Tues");
+  var wednesday = newDt.includes("Wed");
+  var thursday = newDt.includes("Thur");
+  var friday = newDt.includes("Fri");
+  var saturday = newDt.includes("Sat");
+
+  if (sunday == true) {
+    newHour = newHour + 120;
+  } else {
+    if (monday == true) {
+      newHour = newHour + 96;
+    } else {
+      if (tuesday == true) {
+        newHour = newHour + 72;
+      } else {
+        if (wednesday == true) {
+          newHour = newHour + 48;
+        } else {
+          if (thursday == true) {
+            newHour = newHour + 24;
+          } else {
+            if (friday == true) {
+              newHour = newHour + 0;
+            } else {
+              if (saturday == true) {
+                newHour = newHour + 144;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  document.getElementById('untilWeekend').innerHTML = newHour;
+  
   
 }
 
-var currentDateToday = new Date().getTime();
-var dt = new Date(currentDateToday);
 
-var newDt = String(dt);
-
-var sunday = newDt.includes("Sun");
-var monday = newDt.includes("Mon");
-var tuesday = newDt.includes("Tues");
-var wednesday = newDt.includes("Wed");
-var thursday = newDt.includes("Thur");
-var friday = newDt.includes("Fri");
-var saturday = newDt.includes("Sat");
 
   
-alert(sunday + "\n" + monday + "\n" + tuesday + "\n" + wednesday + "\n" + thursday + "\n" + friday + "\n" + saturday);
+//alert(sunday + "\n" + monday + "\n" + tuesday + "\n" + wednesday + "\n" + thursday + "\n" + friday + "\n" + saturday);
 
 
-document.getElementById('untilWeekend').innerHTML = " " + "h "  + "m "  + "s";
+
 
 
 
@@ -924,7 +958,7 @@ function ticke() { //fourth Period
 function repeat() {
     tick1(); tick2(); tick3(); tick4(); tick5(); tick6(); tick7(); tick8(); ticke();
   
-  date();
+  date();  weekendCalculate();
   
     document.addEventListener('DOMContentLoaded', tick1);
     document.addEventListener('DOMContentLoaded', tick2);
