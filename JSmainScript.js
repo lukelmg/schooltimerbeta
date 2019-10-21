@@ -206,11 +206,27 @@ var up = document.getElementById("GFG_P");
             }
             up.innerHTML = a; 
         } 
+document.getElementById("advancedStats").style.display = "none";
 
+
+var outState = 0;
+function moreStatsOut() {
+  
+  if (outState == 1) {
+  document.getElementById("advancedStats").style.display = "none";
+   outState = 0; 
+  } else {
+    if (outState == 0) {
+      document.getElementById("advancedStats").style.display = "block";
+      outState = 1;
+    }
+  }
+}
 
 
 function weekendCalculate () {
-  var newHour = 3;
+  var newHour = parseFloat(endHour);
+  var newMin = parseFloat(endMin);
 
   var currentDateToday = new Date().getTime();
   var dt = new Date(currentDateToday);
@@ -253,9 +269,8 @@ function weekendCalculate () {
     }
   }
   
-  document.getElementById('untilWeekend').innerHTML = newHour;
   
-  
+  document.getElementById('untilWeekend').innerHTML = '' + newHour + 'h ' + newMin + 'm ' + seconds + "s";
 }
 
 
