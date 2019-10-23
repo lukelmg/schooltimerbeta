@@ -173,7 +173,7 @@ function unload() {
   document.getElementById("loadingScreen").style.top = "0%";
   setTimeout(function() {
       clearLoad();
-}, 700);
+}, 0);
 
 }
 
@@ -267,6 +267,10 @@ function weekendCalculate () {
         }
       }
     }
+  }
+  
+  if (schoolOver == 'yes') {
+    newHour = newHour - 24;
   }
   
   
