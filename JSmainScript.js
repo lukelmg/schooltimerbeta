@@ -206,18 +206,18 @@ var up = document.getElementById("GFG_P");
             }
             up.innerHTML = a; 
         } 
-document.getElementById("advancedStats").style.display = "none";
+document.getElementById("advancedStats").style.display = "-20vw";
 
 
 var outState = 0;
 function moreStatsOut() {
   
   if (outState == 1) {
-  document.getElementById("advancedStats").style.display = "none";
+ document.getElementById("advancedStats").style.marginRight = "-20vw";
    outState = 0; 
   } else {
     if (outState == 0) {
-      document.getElementById("advancedStats").style.display = "block";
+    document.getElementById("advancedStats").style.marginRight = "10px";
       outState = 1;
     }
   }
