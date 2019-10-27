@@ -1,7 +1,7 @@
 #advancedStats {
   background-color: #191B1F;
   float: right;
-  width: 25vh;
+  width: 27vh;
   height: 90vh;
   margin-right: 0px;
   z-index: 1;
@@ -10,40 +10,68 @@
   transition: all 0.15s ease-in-out;
   box-shadow: -10px 10px 10px -10px black;
   margin-right: -20vw;
-  margin-top:1vh;
+  margin-top: 1vh;
   margin-bottom: 1vh;
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px;
-  
 }
 
 .stat {
-  background-color:#2B2F36;
-  margin-top:0px;
-  position:relative;
+  background-color: #2B2F36;
+  margin-top: 0px;
+  position: relative;
   padding: 5px 5px 5px;
   margin-bottom: 10px;
 }
 
 .likeText {
-  font-size: 1.5em;
+  font-size: 1.2vw;
   margin-bottom: 3px;
   margin-top: 0vh;
 }
 
 #untilWeekend {
   font-weight: Bold;
-  font-size: 1.5em;
-  margin-top:3px;
-  color:#FF1C3E;
+  font-size: 1.2vw;
+  margin-top: 3px;
+  color: #FF1C3E;
   margin-bottom: 0px;
 }
 
-#untilQuarter {
-    font-weight: Bold;
-  font-size: 1.5em;
-  margin-top:3px;
-  color:#FF1C3E;
+#until1Quarter {
+  font-weight: Bold;
+  font-size: 1.2vw;
+  margin-top: 3px;
+  color: #FF1C3E;
+  margin-bottom: 0px;
+}
+#until2Quarter {
+  font-weight: Bold;
+  font-size: 1.2vw;
+  margin-top: 3px;
+  color: #FF1C3E;
+  margin-bottom: 0px;
+}
+#until3Quarter {
+  font-weight: Bold;
+  font-size: 1.2vw;
+  margin-top: 3px;
+  color: #FF1C3E;
+  margin-bottom: 0px;
+}
+#until4Quarter {
+  font-weight: Bold;
+  font-size: 1.2vw;
+  margin-top: 3px;
+  color: #FF1C3E;
+  margin-bottom: 0px;
+}
+
+#schoolEnd {
+  font-weight: Bold;
+  font-size: 1.2vw;
+  margin-top: 3px;
+  color: #FF1C3E;
   margin-bottom: 0px;
 }

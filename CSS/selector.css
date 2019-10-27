@@ -71,7 +71,7 @@ body {
   font-size: 4vh;
   margin: 5px 3px;
   margin-bottom: -5;
-  margin-top: 0;
+  margin-top: 2vh;
 }
 
 #tabTxt {
@@ -95,7 +95,7 @@ body {
 
 #dayContainer,
 #dayContainerKey {
-  background-color: #212121;
+  background-color: #191B1F;
   height: 100%;
   padding: 5px 20px;
   margin: 0px 0px 0px 0px;
@@ -110,7 +110,7 @@ body {
 }
 
 #yearContainer {
-  background-color: #212121;
+  background-color: #191B1F;
   display: inline-block;
   margin-top: 0px;
   padding: 0px 0px 0px 0px;

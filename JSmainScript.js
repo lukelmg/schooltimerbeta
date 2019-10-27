@@ -269,12 +269,19 @@ function weekendCalculate () {
     }
   }
   
+  var days = newHour / 24;
+  days = Math.trunc(days);
+  
+  var hourInDays = days * 24;
+  
+  newHour = newHour - hourInDays
+  
   if (schoolOver == 'yes') {
     newHour = newHour - 24;
   }
   
   
-  document.getElementById('untilWeekend').innerHTML = '' + newHour + 'h ' + newMin + 'm ' + seconds + "s";
+  document.getElementById('untilWeekend').innerHTML = days + 'd ' + newHour + 'h ' + newMin + 'm ' + seconds + "s";
 }
 
 
@@ -645,7 +652,7 @@ function tick1() { //first Period
       playSoundTick();
     }
     if (hh <= 24 && hh >= 8) {
-        document.getElementById("firstEndText").innerHTML = "Period 1 Is Over!";
+        document.getElementById("firstEndText").innerHTML = "Period 1 Is Over";
         document.getElementById('firstEnd').innerHTML = '';
         timeDetect1 = 0;
     } else {
@@ -669,7 +676,7 @@ function tick2() { //second Period
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
     if (hh <= 24 && hh >= 8) {
-        document.getElementById("secondEndText").innerHTML = "Period 2 Is Over!";
+        document.getElementById("secondEndText").innerHTML = "Period 2 Is Over";
         document.getElementById('secondEnd').innerHTML = '';
       timeDetect2 = 1;
     } else {
@@ -694,7 +701,7 @@ function tick3() { //third Period
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
     if (hh <= 24 && hh >= 8) {
-        document.getElementById("thirdEndText").innerHTML = "Period 3 Is Over!";
+        document.getElementById("thirdEndText").innerHTML = "Period 3 Is Over";
         document.getElementById('thirdEnd').innerHTML = '';
       timeDetect3 = 0;
     } else {
@@ -748,9 +755,9 @@ function tick4() { //fourth Period
   } else {
     document.getElementById('fourthEnd').innerHTML = ' ';
     if (lunchMode == 'off') {
-    document.getElementById("fourthEndText").innerHTML = "Period 4 Is Over!"; 
+    document.getElementById("fourthEndText").innerHTML = "Period 4 Is Over"; 
     } else {
-        document.getElementById("fourthEndText").innerHTML = "Period 4 Lunch Is Over!"; 
+        document.getElementById("fourthEndText").innerHTML = "Period 4 Lunch Is Over"; 
     }
     timeDetect4 = 0;
   }
@@ -796,9 +803,9 @@ function tick5() { //fourth Period
   } else {
     document.getElementById('fifthEnd').innerHTML = ' ';
     if (lunchMode == 'off') {
-    document.getElementById("fifthEndText").innerHTML = "Period 5 Is Over!"; 
+    document.getElementById("fifthEndText").innerHTML = "Period 5 Is Over"; 
     } else {
-       document.getElementById("fifthEndText").innerHTML = "Period 5 Lunch Is Over!";  
+       document.getElementById("fifthEndText").innerHTML = "Period 5 Lunch Is Over";  
     }
     timeDetect5 = 0;
   }
@@ -847,9 +854,9 @@ function tick6() { //fourth Period
   } else {
     document.getElementById('sixthEnd').innerHTML = ' ';
     if (lunchMode == 'off') {
-    document.getElementById("sixthEndText").innerHTML = "Period 6 Is Over!"; 
+    document.getElementById("sixthEndText").innerHTML = "Period 6 Is Over"; 
     } else {
-    document.getElementById("sixthEndText").innerHTML = "Period 6 Lunch Is Over!";  
+    document.getElementById("sixthEndText").innerHTML = "Period 6 Lunch Is Over";  
     }
     timeDetect6 = 0;
   }
@@ -898,9 +905,9 @@ function tick7() { //fourth Period
   } else {
     document.getElementById('seventhEnd').innerHTML = ' ';
      if (lunchMode == 'off') {
-    document.getElementById("seventhEndText").innerHTML = "Period 7 Is Over!"; 
+    document.getElementById("seventhEndText").innerHTML = "Period 7 Is Over"; 
      } else {
-      document.getElementById("seventhEndText").innerHTML = "Period 7 Lunch Is Over!";   
+      document.getElementById("seventhEndText").innerHTML = "Period 7 Lunch Is Over";   
      }
     timeDetect7 = 0;
   }
@@ -916,7 +923,7 @@ function tick8() { //fourth Period
     var hh = pad((remain / 60 / 60) % 60);
     var mm = pad((remain / 60) % 60);
    if (hh <= 24 && hh >= 8) {
-        document.getElementById("eighthEndText").innerHTML = "Period 8 Is Over!";
+        document.getElementById("eighthEndText").innerHTML = "Period 8 Is Over";
         document.getElementById('eighthEnd').innerHTML = '';
         timeDetect8 = 0;
     } else {
@@ -950,10 +957,10 @@ function ticke() { //fourth Period
   
   
     if (hh <= 24 && hh >= 8) {
-        document.getElementById('endText').innerHTML = 'School Is OVER!' ;
+        document.getElementById('endText').innerHTML = 'School Is Over' ;
         schoolOver = 'yes';
         document.getElementById('time').innerHTML = " ";
-        document.title = "School Is Over!"; 
+        document.title = "School Is Over"; 
       
 
       timeDetecte = 0;
@@ -974,8 +981,134 @@ function ticke() { //fourth Period
     }
 }//end of day
 
+
+function quarter1 (){
+  
+  var newHour = parseFloat(endHour);
+  var newMin = parseFloat(endMin);
+
+  var countDownDate = new Date("Nov 6, 2019 15:53:00").getTime();
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  document.getElementById("until1Quarter").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(quarter1);
+    document.getElementById("until1Quarter").innerHTML = "Quarter 1 Is Over";
+  }
+}
+
+function quarter2 (){
+  
+  var newHour = parseFloat(endHour);
+  var newMin = parseFloat(endMin);
+
+  var countDownDate = new Date("Jan 24, 2020 15:53:00").getTime();
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  document.getElementById("until2Quarter").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(quarter1);
+    document.getElementById("until2Quarter").innerHTML = "Quarter 2 Is Over";
+  }
+}
+
+
+function quarter3 (){
+  
+  var newHour = parseFloat(endHour);
+  var newMin = parseFloat(endMin);
+
+  var countDownDate = new Date("Apr 2, 2020 15:53:00").getTime();
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  document.getElementById("until3Quarter").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(quarter1);
+    document.getElementById("until3Quarter").innerHTML = "Quarter 3 Is Over";
+  }
+}
+
+
+
+function quarter4 (){
+  
+  var newHour = parseFloat(endHour);
+  var newMin = parseFloat(endMin);
+
+  var countDownDate = new Date("Jun 12, 2020 15:53:00").getTime();
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  document.getElementById("until4Quarter").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(quarter1);
+    document.getElementById("until4Quarter").innerHTML = "Quarter 4 Is Over";
+  }
+}
+
+
+function schoolEnd (){
+  
+  var newHour = parseFloat(endHour);
+  var newMin = parseFloat(endMin);
+
+  var countDownDate = new Date("Jun 12, 2020 15:53:00").getTime();
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  document.getElementById("schoolEnd").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(quarter1);
+    document.getElementById("schoolEnd").innerHTML = "The School Year is Over!";
+  }
+}
+
+
+
+                           
+                           
+                           
 function repeat() {
     tick1(); tick2(); tick3(); tick4(); tick5(); tick6(); tick7(); tick8(); ticke();
+  quarter1(); quarter2(); quarter3(); quarter4(); schoolEnd();
   
   date();  weekendCalculate();
   

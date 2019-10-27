@@ -254,12 +254,13 @@
   font-family: Arial;
   font-size: 9vh;
   margin-bottom: 0px;
-  margin-top: 25px;
+  margin-top: 0px;
   font-weight: bold;
   moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.3s ease-in-out;
+  
 }
 
 #getDate:hover {
@@ -278,9 +279,10 @@
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.3s ease-in-out;
-  line-height:20px;
+  line-height:1.5vh;
   margin-top: 10px;
   margin-bottom:10px;
+  
 }
 
 #endYearTxt:hover {
