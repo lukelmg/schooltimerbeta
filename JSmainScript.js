@@ -232,10 +232,10 @@ function weekendCalculate () {
   var dt = new Date(currentDateToday);
 
   var newDt = String(dt);
-
+  
   var sunday = newDt.includes("Sun");
   var monday = newDt.includes("Mon");
-  var tuesday = newDt.includes("Tues");
+  var tuesday = newDt.includes("Tue");
   var wednesday = newDt.includes("Wed");
   var thursday = newDt.includes("Thur");
   var friday = newDt.includes("Fri");
@@ -1102,13 +1102,36 @@ function schoolEnd (){
 }
 
 
+function seniorEnd (){
+  
+  var newHour = parseFloat(endHour);
+
+  var countDownDate = new Date("Jun 4, 2020 10:30:00").getTime();
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  document.getElementById("seniorEnd").innerHTML = days + "d " + hours + "h "  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(quarter1);
+    document.getElementById("seniorEnd").innerHTML = "Senior Year is Over";
+  }
+}
+
+
 
                            
                            
                            
 function repeat() {
     tick1(); tick2(); tick3(); tick4(); tick5(); tick6(); tick7(); tick8(); ticke();
-  quarter1(); quarter2(); quarter3(); quarter4(); schoolEnd();
+  quarter1(); quarter2(); quarter3(); quarter4(); schoolEnd(); seniorEnd();
   
   date();  weekendCalculate();
   
