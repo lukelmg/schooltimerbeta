@@ -87,6 +87,7 @@
   transition: all 0.1s ease-in-out;
   background-color: #15161A;
   outline: 0 none;
+  margin-left: 10px;
 }
 .feature:hover {
   transform: scale(1.1);

@@ -31,52 +31,7 @@
   margin-top: 0vh;
 }
 
-#untilWeekend {
-  font-weight: Bold;
-  font-size: 1.2vw;
-  margin-top: 3px;
-  color: #FF1C3E;
-  margin-bottom: 0px;
-}
-
-#until1Quarter {
-  font-weight: Bold;
-  font-size: 1.2vw;
-  margin-top: 3px;
-  color: #FF1C3E;
-  margin-bottom: 0px;
-}
-#until2Quarter {
-  font-weight: Bold;
-  font-size: 1.2vw;
-  margin-top: 3px;
-  color: #FF1C3E;
-  margin-bottom: 0px;
-}
-#until3Quarter {
-  font-weight: Bold;
-  font-size: 1.2vw;
-  margin-top: 3px;
-  color: #FF1C3E;
-  margin-bottom: 0px;
-}
-#until4Quarter {
-  font-weight: Bold;
-  font-size: 1.2vw;
-  margin-top: 3px;
-  color: #FF1C3E;
-  margin-bottom: 0px;
-}
-
-#schoolEnd {
-  font-weight: Bold;
-  font-size: 1.2vw;
-  margin-top: 3px;
-  color: #FF1C3E;
-  margin-bottom: 0px;
-}
-
-#seniorEnd {
+#untilWeekend, #until1Quarter, #until2Quarter, #until3Quarter, #until4Quarter, #schoolEnd, #seniorEnd, #winterBreak {
   font-weight: Bold;
   font-size: 1.2vw;
   margin-top: 3px;

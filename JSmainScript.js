@@ -27,6 +27,11 @@ refreshAt(7,40,0);
 
 //STAY AT TOP
 
+function middleTimer() {
+  window.location.href = 'http://middleschooltimer.glitch.me';
+}
+
+
 var rotation = 0;
 var scale = 1;
 var transformY = 0;
@@ -1125,6 +1130,29 @@ function seniorEnd (){
 }
 
 
+function winterBreak (){
+  
+  var newHour = parseFloat(endHour);
+
+  var countDownDate = new Date("Dec 21, 2019 14:53:00").getTime();
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  document.getElementById("winterBreak").innerHTML = days + "d " + hours + "h "  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(quarter1);
+    document.getElementById("winterBreak").innerHTML = "Has Started!";
+  }
+}
+
+
 
                            
                            
@@ -1133,7 +1161,7 @@ function repeat() {
     tick1(); tick2(); tick3(); tick4(); tick5(); tick6(); tick7(); tick8(); ticke();
   quarter1(); quarter2(); quarter3(); quarter4(); schoolEnd(); seniorEnd();
   
-  date();  weekendCalculate();
+  date();  weekendCalculate(); winterBreak();
   
     document.addEventListener('DOMContentLoaded', tick1);
     document.addEventListener('DOMContentLoaded', tick2);
@@ -1215,6 +1243,7 @@ function setElementsAsValues () {
          // document.getElementById("video").style.backgroundColor = accent;
          // document.getElementById("myBtn").style.backgroundColor = accent;
           document.getElementById("feature").style.backgroundColor = settingDpres;
+        document.getElementById("middleTimer").style.backgroundColor = settingDpres;
           document.getElementById("title").style.color = accent;
           document.getElementById("myprogressBar").style.backgroundColor = accent;
   
