@@ -987,12 +987,12 @@ function ticke() { //fourth Period
 }//end of day
 
 
-function quarter1 (){
+function untilThanks (){
   
   var newHour = parseFloat(endHour);
   var newMin = parseFloat(endMin);
 
-  var countDownDate = new Date("Nov 6, 2019 15:53:00").getTime();
+  var countDownDate = new Date("Nov 27, 2019 15:53:00").getTime();
 
   var now = new Date().getTime();
 
@@ -1002,11 +1002,11 @@ function quarter1 (){
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-  document.getElementById("until1Quarter").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
+  document.getElementById("untilThanks").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
 
   if (distance < 0) {
-    clearInterval(quarter1);
-    document.getElementById("until1Quarter").innerHTML = "Quarter 1 Is Over";
+    clearInterval(untilThanks);
+    document.getElementById("untilThanks").innerHTML = "Time Up!";
   }
 }
 
@@ -1028,7 +1028,7 @@ function quarter2 (){
   document.getElementById("until2Quarter").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
 
   if (distance < 0) {
-    clearInterval(quarter1);
+    clearInterval(quarter2);
     document.getElementById("until2Quarter").innerHTML = "Quarter 2 Is Over";
   }
 }
@@ -1052,7 +1052,7 @@ function quarter3 (){
   document.getElementById("until3Quarter").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
 
   if (distance < 0) {
-    clearInterval(quarter1);
+    clearInterval(quarter2);
     document.getElementById("until3Quarter").innerHTML = "Quarter 3 Is Over";
   }
 }
@@ -1077,7 +1077,7 @@ function quarter4 (){
   document.getElementById("until4Quarter").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
 
   if (distance < 0) {
-    clearInterval(quarter1);
+    clearInterval(quarter2);
     document.getElementById("until4Quarter").innerHTML = "Quarter 4 Is Over";
   }
 }
@@ -1101,7 +1101,7 @@ function schoolEnd (){
   document.getElementById("schoolEnd").innerHTML = days + "d " + newHour + "h "  + newMin + "m " + seconds + "s ";
 
   if (distance < 0) {
-    clearInterval(quarter1);
+    clearInterval(quarter2);
     document.getElementById("schoolEnd").innerHTML = "The School Year is Over!";
   }
 }
@@ -1124,7 +1124,7 @@ function seniorEnd (){
   document.getElementById("seniorEnd").innerHTML = days + "d " + hours + "h "  + minutes + "m " + seconds + "s ";
 
   if (distance < 0) {
-    clearInterval(quarter1);
+    clearInterval(quarter2);
     document.getElementById("seniorEnd").innerHTML = "Senior Year is Over";
   }
 }
@@ -1147,7 +1147,7 @@ function winterBreak (){
   document.getElementById("winterBreak").innerHTML = days + "d " + hours + "h "  + minutes + "m " + seconds + "s ";
 
   if (distance < 0) {
-    clearInterval(quarter1);
+    clearInterval(quarter2);
     document.getElementById("winterBreak").innerHTML = "Has Started!";
   }
 }
@@ -1159,7 +1159,7 @@ function winterBreak (){
                            
 function repeat() {
     tick1(); tick2(); tick3(); tick4(); tick5(); tick6(); tick7(); tick8(); ticke();
-  quarter1(); quarter2(); quarter3(); quarter4(); schoolEnd(); seniorEnd();
+   quarter2(); quarter3(); quarter4(); schoolEnd(); seniorEnd(); untilThanks();
   
   date();  weekendCalculate(); winterBreak();
   
@@ -1246,6 +1246,23 @@ function setElementsAsValues () {
         document.getElementById("middleTimer").style.backgroundColor = settingDpres;
           document.getElementById("title").style.color = accent;
           document.getElementById("myprogressBar").style.backgroundColor = accent;
+  
+  
+  var advancedStatTextColor = document.getElementsByClassName("timeValueAdvanced");
+  var stat = document.getElementsByClassName("stat");
+ document.getElementById("advancedStats").style.backgroundColor = sidebar;
+  
+for (var i = 0; i < advancedStatTextColor.length; i++) {
+    advancedStatTextColor[i].style.color = accent;
+}
+  for (var i = 0; i < stat.length; i++) {
+    stat[i].style.backgroundColor = background;
+    stat[i].style.color = text;
+}
+  
+
+  
+//       document.getElementById("untilThanks").style.color = accent;
   
             document.getElementById("firstEndText").style.color = text; //time text
             document.getElementById("secondEndText").style.color = text;
@@ -1455,6 +1472,7 @@ var radioColor = 'white';
            if (element == 'sidebar') { //SIDEBAR
                 document.getElementById("dayContainer").style.backgroundColor = hex1;
                 document.getElementById("yearContainer").style.backgroundColor = hex1;
+              document.getElementById("advancedStats").style.backgroundColor = hex1;
              
              localStorage.setItem("customSidebarColor", hex1);
            } else {
