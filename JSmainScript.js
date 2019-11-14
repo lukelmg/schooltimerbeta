@@ -284,6 +284,11 @@ function weekendCalculate () {
   if (schoolOver == 'yes') {
     newHour = newHour - 24;
   }
+  if (newHour < 0) {
+  newHour = newHour * -1;
+  days = days - 1;
+    newHour = 24-newHour;
+  }
   
   
   document.getElementById('untilWeekend').innerHTML = days + 'd ' + newHour + 'h ' + newMin + 'm ' + seconds + "s";
@@ -1250,7 +1255,7 @@ function setElementsAsValues () {
   
   var advancedStatTextColor = document.getElementsByClassName("timeValueAdvanced");
   var stat = document.getElementsByClassName("stat");
- document.getElementById("advancedStats").style.backgroundColor = sidebar;
+  document.getElementById("advancedStats").style.backgroundColor = sidebar;
   
 for (var i = 0; i < advancedStatTextColor.length; i++) {
     advancedStatTextColor[i].style.color = accent;
@@ -1430,6 +1435,15 @@ var radioColor = 'white';
        
     localStorage.setItem("customBackgroundColor", hex1);
        
+         var statBack = document.getElementsByClassName("stat");
+       
+              for (var i = 0; i < statBack.length; i++) {
+            statBack[i].style.backgroundColor = hex1;
+              }
+         
+       
+       
+       
      } else {
        if (element == 'accent') {   //ACCENT
           document.getElementById("endText").style.color = hex1;
@@ -1439,6 +1453,15 @@ var radioColor = 'white';
           document.getElementById("myprogressBar").style.backgroundColor = hex1;
          
           localStorage.setItem("customAccentColor", hex1);
+         
+         
+          var accentStat = document.getElementsByClassName("timeValueAdvanced");
+       
+              for (var i = 0; i < accentStat.length; i++) {
+            accentStat[i].style.color = hex1;
+              }
+         
+         
          // alert(hex1);
          
        } else {
@@ -1468,6 +1491,13 @@ var radioColor = 'white';
             document.getElementById("myName").style.color = hex1;
            
             localStorage.setItem("customTextColor", hex1);
+           
+            var stat = document.getElementsByClassName("stat");
+       
+              for (var i = 0; i < stat.length; i++) {
+            stat[i].style.color = hex1;
+              }
+           
          } else {
            if (element == 'sidebar') { //SIDEBAR
                 document.getElementById("dayContainer").style.backgroundColor = hex1;
