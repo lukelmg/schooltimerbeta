@@ -286,7 +286,6 @@ function weekendCalculate () {
   }
   if (newHour < 0) {
   newHour = newHour * -1;
-  days = days - 1;
     newHour = 24-newHour;
   }
   
@@ -1225,7 +1224,6 @@ colorPicker.on(["color:init", "color:change"], function(color){
   
 
 
-
 function setElementsAsValues () {
           Dsidebar = settingDpres;
           settingTxtD = settingDTxtpres;
@@ -1248,7 +1246,9 @@ function setElementsAsValues () {
          // document.getElementById("video").style.backgroundColor = accent;
          // document.getElementById("myBtn").style.backgroundColor = accent;
           document.getElementById("feature").style.backgroundColor = settingDpres;
+   //document.getElementById("moreStats").style.backgroundColor = "green";
         document.getElementById("middleTimer").style.backgroundColor = settingDpres;
+       
           document.getElementById("title").style.color = accent;
           document.getElementById("myprogressBar").style.backgroundColor = accent;
   
@@ -1314,6 +1314,12 @@ for (var i = 0; i < advancedStatTextColor.length; i++) {
   
     document.getElementById("feature").style.backgroundColor = settingDpres;
   document.getElementById("feature").style.color = settingDTxtpres;
+  
+   // document.getElementById("moreStats").style.backgroundColor = settingDpres;
+  //document.getElementById("moreStats").style.color = settingDTxtpres;
+  
+    document.getElementById("middleTimer").style.backgroundColor = settingDpres;
+  document.getElementById("middleTimer").style.color = settingDTxtpres;
   
           document.getElementById("myBtn").style.backgroundColor = settingDpres;
           document.getElementById("myBtn").style.color = settingDTxtpres;
@@ -1557,6 +1563,10 @@ var radioColor = 'white';
                    document.getElementById("myBtn").style.color = hex1;
                    document.getElementById("feature").style.color = hex1;
                  
+                //   document.getElementById("moreStats").style.color = hex1;
+                 
+                   document.getElementById("middleTimer").style.color = hex1;
+                 
                    localStorage.setItem("customButtonTextColor", hex1);
                } else {
                  if (element == 'settingD') {
@@ -1564,6 +1574,10 @@ var radioColor = 'white';
                     localStorage.setItem("customSettingDisabledColor", hex1);
                    
                      document.getElementById("feature").style.backgroundColor = hex1;
+                   
+                  // document.getElementById("moreStats").style.backgroundColor = hex1;
+                   
+                   document.getElementById("middleTimer").style.backgroundColor = hex1;
                    document.getElementById("myBtn").style.backgroundColor = hex1;
                     document.getElementById("Progress_Status").style.backgroundColor = hex1;//asdfasdfasdf
                    
@@ -1606,6 +1620,8 @@ var radioColor = 'white';
                     
                          document.getElementById("myBtn").style.color = hex1;
                           document.getElementById("feature").style.color = hex1;
+                          //document.getElementById("moreStats").style.color = hex1;
+                          document.getElementById("middleTimer").style.color = hex1;
                          buttonTxtColorChange();
                          
                        }

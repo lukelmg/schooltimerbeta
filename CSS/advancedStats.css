@@ -2,7 +2,7 @@
   background-color: #191B1F;
   float: right;
   width: 27vh;
-  height: 90vh;
+  height: 100%;
   margin-right: 0px;
   z-index: 1;
   background-color: 191b1f;
@@ -10,7 +10,7 @@
   transition: all 0.15s ease-in-out;
   box-shadow: -10px 10px 10px -10px black;
   margin-right: -20vw;
-  margin-top: 1vh;
+  margin-top: 0vh;
   margin-bottom: 1vh;
   padding-left: 10px;
   padding-top: 10px;
@@ -23,7 +23,7 @@
   position: relative;
   padding: 5px 5px 5px;
   margin-bottom: 10px;
-  height: 8vh;
+  height: 9% ;
   vertical-align: middle;
 }
 
