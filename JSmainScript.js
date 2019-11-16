@@ -189,7 +189,7 @@ function clearLoad() {
 
 var doneSurvey;
 var otherData;
-alert(doneSurvey);
+
 function hasLoadBefore() {
  if (doneSurvey == undefined) {
    otherData = "has not loaded";
