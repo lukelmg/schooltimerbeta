@@ -28,18 +28,21 @@
 }
 
 .likeText {
-  font-size: 1.2vw;
-  margin-bottom: 3px;
-  margin-top: .4vh;
+  font-size: 2.5vh;
+
   vertical-align: middle;
+margin: 3% 0;
+  
 }
 
 
 .timeValueAdvanced {
   font-weight: Bold;
-  font-size: 1.2vw;
+  font-size: 50%;
   margin-top: 3px;
   color: #FF1C3E;
   margin-bottom: 0px;
   vertical-align: middle;
+  font-size: 2.5vh;
+  margin-bottom: -3;
 }

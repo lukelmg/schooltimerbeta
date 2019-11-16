@@ -178,13 +178,29 @@ function unload() {
   document.getElementById("loadingScreen").style.top = "0%";
   setTimeout(function() {
       clearLoad();
-}, 0);
+}, 9999999999999999);
 
 }
 
 function clearLoad() {
   document.getElementById("loadingScreen").style.top = "-100%";
   document.getElementById("loadingScreen").style.zIndex = "-1";
+}
+
+var doneSurvey;
+var otherData;
+alert(doneSurvey);
+function hasLoadBefore() {
+ if (doneSurvey == undefined) {
+   otherData = "has not loaded";
+ }
+}
+
+function loadSurvey (){
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLSd9cvJnKrxNWSY6z4Mc-o8SdOxr1ghBS_3W8Zis6BmlKXADpw/viewform','mywindow').focus()
+ setTimeout(function() {
+      clearLoad();
+}, 500);
 }
 
 
