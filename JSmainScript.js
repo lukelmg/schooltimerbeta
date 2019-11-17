@@ -1,7 +1,7 @@
 //STAY AT TOP
 
 function schooltimer() {
-  
+  hasLoadBefore();
   Apressed();   //change to change schedule
   
 }
@@ -178,22 +178,45 @@ function unload() {
   document.getElementById("loadingScreen").style.top = "0%";
   setTimeout(function() {
       clearLoad();
-}, 9999999999999999);
+}, 999999999999);
 
 }
 
+
+function unloadQuick() {
+  document.getElementById("loadingScreen").style.top = "0%";
+  setTimeout(function() {
+      clearLoad();
+}, 500);
+
+}
 function clearLoad() {
   document.getElementById("loadingScreen").style.top = "-100%";
   document.getElementById("loadingScreen").style.zIndex = "-1";
 }
 
 var doneSurvey;
+doneSurvey = localStorage.getItem("doneSurvey");
+
 var otherData;
 
 function hasLoadBefore() {
- if (doneSurvey == undefined) {
+  //alert("done")
+ if (doneSurvey == null) {
    otherData = "has not loaded";
+  // alert("has not loaded");
+   doneSurvey = 1;
+   localStorage.setItem("doneSurvey", "yes");
+   document.getElementById("continueButton").style.display = "none";
+   unload();
+ } else {
+   otherData = "has loaded before";
+  // alert("has loaded");
+   document.getElementById("continueButton").style.display = "none";
+  unloadQuick();
  }
+  
+  
 }
 
 function loadSurvey (){
