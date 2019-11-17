@@ -1,3 +1,12 @@
+canvas {
+  display: block;
+  position: absolute;
+  zindex: 1;
+  pointer-events: none;
+  width: 200vw;
+  height: 100vh;
+}
+
 #continueButton {
   background-color:transparent;
   border: 1px solid white;
@@ -286,9 +295,9 @@
   color: white;
   display: inline-block;
   font-family: Arial;
-  font-size: 9vh;
+  font-size: 7.5vh;
   margin-bottom: 0px;
-  margin-top: 4vh;
+  margin-top: 2.5vh;
   font-weight: bold;
   moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;

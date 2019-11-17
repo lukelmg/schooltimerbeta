@@ -1,8 +1,7 @@
 .tabTitleButton {
-  margin-top: 0%;
+  margin-top: -15px;
   padding: 0px 10px 0px 10px;
   font-size: 2.5vh;
-  font-weight: 600;
   color: #fff;
   cursor: pointer;
   margin: 10px 0px 0px 0px;
@@ -27,7 +26,6 @@
   margin-top: 100%;
   padding: 0px 5px 0px 5px;
    font-size: 2.5vh;
-  font-weight: 600;
   color: #fff;
   cursor: pointer;
   margin-top: 10px;
@@ -98,7 +96,6 @@
   margin-top: 100%;
   padding: 0px 5px 0px 5px;
   font-size: 2.5vh;
-  font-weight: 600;
   color: #fff;
   cursor: pointer;
   margin-top: 10px;
@@ -121,6 +118,38 @@
 .colorPicker:hover {
   transform: scale(1.1);
 }
+
+
+
+.moreStats {
+  word-break: break-all;
+  margin-top: 100%;
+  padding: 0px 5px 0px 5px;
+  font-size: 2.5vh;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  height: 7%;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 5px;
+  background-color: #2B2F36;
+   width:10vw;
+  moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  background-color: #2B2F36;
+  outline: 0 none;
+}
+
+.moreStats:hover {
+  transform: scale(1.1);
+}
+
+
 
 .vidButton {
   width: 120px;

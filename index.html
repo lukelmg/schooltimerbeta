@@ -52,6 +52,7 @@
   
   
   <body onload="rememberPreset(); schooltimer(); mobile(); onloadtest(); checkToggle(); hasLoadBefore();" scroll="no" style="overflow: hidden">
+    <canvas id="confetti" style="width:90vw;height:90vh;"></canvas>
     <div id="loadingScreen">
     
       <div id="spinnerContainer">
@@ -141,7 +142,7 @@
          <br>
             <div class="tooltip">  <span class="tooltiptext">2 Hour Delay</span>  <p id="daySelectTxt4">D</p><button type="button" id="buttonD" class="checkButton buttonD" onclick="Dpressed();"><center><div id="Ddiv">&nbsp</div></center></button> </div>
           <br>
-          <p id="tabTxt">Settings</p>
+          <p id="tabTxt"></p>
           <div class="tooltip">
             <span class="tooltiptext">Changes Tab Title to end of day from closest period</span>
             <button class="tabTitleButton" type="button" id="tabTitleButton" onclick="tabSwitch();">
@@ -162,10 +163,15 @@
             <input type="button" class="colorPicker" value="Color Picker" id="myBtn" onclick="moveColor();">
             </div>
             <br>
+            <div class="tooltip">
+            <span class="tooltiptext">More Advanced and Specific</span>
+             <button onclick="moreStatsOut()" type="button" id="middleTimer" class="colorPicker"><center>More Stats</center></button>
+            </div>
+            <br>
           <div id="yearContainer">
             <p id="getDate">0</p>
           </div> <br>
-          <p id="endYearTxt">Weeks Until<br><br>Summer Break</p>
+          <p id="endYearTxt" onclick="confet();">Weeks Until<br><br>Summer Break</p>
           </center>
         </div>
         
@@ -207,7 +213,7 @@
         </div>
         
           <div class="stat">
-              <p class="likeText">Winter Break In</p><p class="timeValueAdvanced" id="winterBreak">10d 10h 5m 10s</p>
+              <p class="likeText">Winter Break</p><p class="timeValueAdvanced" id="winterBreak">10d 10h 5m 10s</p>
         </div>
     </div>
     <div id="like">
@@ -245,7 +251,6 @@
     <p id="copy">Made by </p>
     <p id="myName">Luke Gutman 2019 &nbsp</p>
         <button onclick="stuff();" id="feature" class="feature"><center>&#9432; More Info</center></button>
-         <button onclick="moreStatsOut();" id="middleTimer" class="feature"><center>More Stats</center></button>
   <p id="title"></p>
   <center>
     <div id="light">

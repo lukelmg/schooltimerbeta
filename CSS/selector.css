@@ -67,12 +67,13 @@ body {
 
 #schoolScheduleTxt {
   color: white;
-  font-weight: bold;
+
 
   font-size: 4vh;
   margin: 5px 3px;
   margin-bottom: -5;
   margin-top: 2vh;
+
 }
 
 #tabTxt {
