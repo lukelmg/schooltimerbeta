@@ -1016,7 +1016,7 @@ function ticke() { //fourth Period
         document.getElementById('endText').innerHTML = 'School Is Over' ;
         schoolOver = 'yes';
         document.getElementById('time').innerHTML = " ";
-        document.title = "00:09:41"; 
+        document.title = "School Is Over"; 
       
 
       timeDetecte = 0;

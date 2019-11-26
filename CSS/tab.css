@@ -23,9 +23,12 @@
 }
 
 #selectTabTitle {
-  width: 80%;
-  height: 10%;
+  width: 50%;
+  height: 5vh;
   font-size: .75vw;
+    display:inline-block;
+   border: 1px solid gray;
+  vertical-align: top;
 }
 
 #selectTabTitle:focus {
@@ -39,4 +42,17 @@
 #tabImage {
   width: 80%;
   border-radius: 10px;
+}
+
+#displayNameTab {
+  height: 5vh;
+  width: 5vh;
+  background-color:white;
+  border: 1px solid gray;
+  display:inline-block;
+  vertical-align: top;
+}
+
+#displayNameTab:hover {
+  background-color:#dedede;
 }
