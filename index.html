@@ -40,15 +40,16 @@
     <link rel="stylesheet" href="CSS/random.css">
     <link rel="stylesheet" href="CSS/selector.css">
     <link rel="stylesheet" href="CSS/animatedButtons.css">
+    <link rel="stylesheet" href="CSS/tab.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
    
   </head>
   
   
-    <audio id="click1" src="https://cdn.glitch.com/b41ac94d-c334-488c-802a-1b6b7a8c75e8%2FChicken-Clucking-Short-www.fesliyanstudios.com%20(1).mp3?v=1571405231239"></audio>
-  <audio id="click2" src="https://cdn.glitch.com/b41ac94d-c334-488c-802a-1b6b7a8c75e8%2FChicken-Clucking-Short-www.fesliyanstudios.com%20(1).mp3?v=1571405231239"></audio>
-   <!--<audio id="click1" src="https://cdn.glitch.com/61df65a3-20ed-4ff0-abd8-cc39d4829321%2Fclick%203%20edited.wav?v=1569539649834"></audio>
-     <audio id="click2" src="https://cdn.glitch.com/61df65a3-20ed-4ff0-abd8-cc39d4829321%2Fclick%203%20edited.wav?v=1569539649834"></audio> -->
+   <!-- <audio id="click1" src="https://cdn.glitch.com/b41ac94d-c334-488c-802a-1b6b7a8c75e8%2FChicken-Clucking-Short-www.fesliyanstudios.com%20(1).mp3?v=1571405231239"></audio>
+  <audio id="click2" src="https://cdn.glitch.com/b41ac94d-c334-488c-802a-1b6b7a8c75e8%2FChicken-Clucking-Short-www.fesliyanstudios.com%20(1).mp3?v=1571405231239"></audio> -->
+  <audio id="click1" src="https://cdn.glitch.com/61df65a3-20ed-4ff0-abd8-cc39d4829321%2Fclick%203%20edited.wav?v=1569539649834"></audio>
+     <audio id="click2" src="https://cdn.glitch.com/61df65a3-20ed-4ff0-abd8-cc39d4829321%2Fclick%203%20edited.wav?v=1569539649834"></audio> 
   
   
   <body onload="rememberPreset(); schooltimer(); mobile(); onloadtest(); checkToggle(); hasLoadBefore();" scroll="no" style="overflow: hidden">
@@ -164,7 +165,7 @@
             </div>
             <br>
             <div class="tooltip">
-            <span class="tooltiptext">More Advanced and Specific</span>
+            <span class="tooltiptext">More Advanced and Specific Stats</span>
              <button onclick="moreStatsOut()" type="button" id="middleTimer" class="colorPicker"><center>More Stats</center></button>
             </div>
             <br>
@@ -219,6 +220,32 @@
     <div id="like">
     </div>
   </form>
+    
+       <center> 
+      <div id="tabSettings">
+      <h2 id="customHead">Tab Title Customization</h2> 
+        <image id="tabImage" src="https://cdn.glitch.com/b41ac94d-c334-488c-802a-1b6b7a8c75e8%2Fchrome_SQdDMe3FiI.png?v=1574732242215"></image>
+        <br><br>
+                <h3>
+          Change the title of SchoolTimer's tab by selecting one of the options below (remembered after close)
+        </h3>
+        
+        <br>
+        <select id="selectTabTitle" oninput="readTabInput();">
+          <option class="valueTab" value="current">Current Period</option>
+          <option class="valueTab" value="first">Period 1</option>
+          <option class="valueTab" value="second">Period 2</option>
+          <option class="valueTab" value="third">Period 3</option>
+          <option class="valueTab" value="fourth">Period 4</option>
+          <option class="valueTab" value="fifth">Period 5</option>
+          <option class="valueTab" value="sixth">Period 6</option>
+          <option class="valueTab" value="seventh">Period 7</option>
+          <option class="valueTab" value="eighth">Period 8</option>
+          <option class="valueTab" value="end">End of Day</option>
+        </select>
+      </div>
+    </center>
+    
   <span id="result"></span>
   <p id="firstEndText"><b>Period 1 Ends In:&nbsp</b></p>
   <p id="firstEnd"></p>
@@ -250,7 +277,7 @@
     <p onclick="notes();" id="versionNumber">Version 7.4 </p>
     <p id="copy">Made by </p>
     <p id="myName">Luke Gutman 2019 &nbsp</p>
-        <button onclick="stuff();" id="feature" class="feature"><center>&#9432; More Info</center></button>
+        <button onclick="stuff();" id="feature" class="feature"><center>&#9432; More Info</center></button><button class="feature" onclick="legal();">test</button>
   <p id="title"></p>
   <center>
     <div id="light">

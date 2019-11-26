@@ -86,6 +86,7 @@
   background-color: #2B2F36;
   outline: 0 none;
   margin-left: 10px;
+   display:inline-block;
 }
 .feature:hover {
   transform: scale(1.1);

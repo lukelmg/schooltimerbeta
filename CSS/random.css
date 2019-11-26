@@ -1,3 +1,7 @@
+#legal {
+  display:inline-block;
+}
+
 canvas {
   display: block;
   position: absolute;

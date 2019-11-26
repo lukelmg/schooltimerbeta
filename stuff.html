@@ -37,7 +37,8 @@
       <button type="button" id="notes" class="stuffButton notes" onclick="notes();">Release Notes</button><br>
       <button type="button" id="videos" class="stuffButton videos" onclick="videos();">GitHub</button><br>
        <button type="button" id="mobile" class="stuffButton mobile" onclick="mobile();">Mobile Version</button><br>
-    <button type="button" id="middleSchool" class="stuffButton middleSchool" onclick="middle();">Middle School Timer</button>
+    <button type="button" id="middleSchool" class="stuffButton middleSchool" onclick="middle();">Middle School Timer</button><br>
+     <button type="button" id="dan" class="stuffButton dan" onclick="dan();">Dan's Grade Calculator</button>
       
        <div id="dialog" title="Contact Information">
         <p id="dialogTxt">Luke Gutman <br><br> Email: schooltimer@lukegutman.com</p>
@@ -98,7 +99,7 @@ xhr.send(JSON.stringify({
 } 
 
   function notes() {
-  window.location.href = 'http://schooltimerbeta.glitch.me/releasenotes.html';
+  window.location.href = 'https://schooltimer.glitch.me/releasenotes.html';
 
   }
   
@@ -107,11 +108,15 @@ window.location.href = 'https://github.com/lukelmg?tab=repositories';
   }
   
    function mobile() {
-window.location.href = 'http://schooltimerbeta.glitch.me/mobile.html';
+window.location.href = 'https://schooltimer.glitch.me/mobile.html';
   }
      function middle() {
-window.location.href = 'http://middleschooltimer.glitch.me';
+window.location.href = 'https://middleschooltimer.glitch.me';
   }
+function dan() {
+  window.location.href = "https://docs.google.com/spreadsheets/d/18jyEMJc3Fl7mc_uQNveHNZ4kk5KQgOnNHxJtIZPb5I0/copy"
+}  
+  
 </script>
 
 
@@ -150,9 +155,9 @@ window.location.href = 'http://middleschooltimer.glitch.me';
   }
   
   
-  #bug, #feature, #contact, #notes, #videos, #mobile, #middleSchool {
+  #bug, #feature, #contact, #notes, #videos, #mobile, #middleSchool, #dan {
     width: 30vw;
-    height: 4.4vw;
+    height: 3.7vw;
     margin-top: 2vh;
     margin-left: .5%;
     margin-right: .5%;
@@ -160,10 +165,10 @@ window.location.href = 'http://middleschooltimer.glitch.me';
     font-size: 1.5em;
     font-family:Arial;
     border-raidus: 10px;
-    font-weight:Bold;
+
   }
   
-  .bug:hover, .feature:hover, .contact:hover, .notes:hover, .videos:hover, .mobile:hover, .middleSchool:hover{
+  .bug:hover, .feature:hover, .contact:hover, .notes:hover, .videos:hover, .mobile:hover, .middleSchool:hover, .dan:hover{
     background-color: #c2c2c2;
   }
 
